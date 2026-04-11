@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- PRIMARY SEO META TAGS -->
+<title>Light Load AI | AI Consulting & Automation in Connecticut</title>
+<meta name="description" content="Light Load AI helps Connecticut businesses automate workflows and integrate AI. Expert consulting for small businesses in New Haven, Hartford, and beyond. Get a free audit.">
+<meta name="keywords" content="AI consulting Connecticut, AI automation small business CT, workflow automation New Haven, AI consultant Hartford, business automation Bethany CT, AI setup small business Connecticut">
+<meta name="author" content="Milena Bucci">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lightload.ai">
+
+<!-- OPEN GRAPH (SOCIAL SHARING) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lightload.ai">
+<meta property="og:title" content="Light Load AI — Modernizing Connecticut Small Business">
+<meta property="og:description" content="We help local businesses lighten the load with smart AI automation and custom consulting. In-person. Hands-on. Built for you.">
+<meta property="og:image" content="https://lightload.ai/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Light Load AI">
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Light Load AI — AI Consulting for CT Small Businesses">
+<meta name="twitter:description" content="Running a small business is heavy. We make it light. AI consulting and automation for Connecticut businesses.">
+<meta name="twitter:image" content="https://lightload.ai/og-image.jpg">
+
+<!-- JSON-LD LOCAL BUSINESS SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Light Load AI",
+  "alternateName": "Lightload AI",
+  "description": "AI consulting and workflow automation for small businesses in Connecticut and surrounding areas. In-person setup, hands-on training, and ongoing support.",
+  "url": "https://lightload.ai",
+  "logo": "https://lightload.ai/logo.png",
+  "image": "https://lightload.ai/og-image.jpg",
+  "telephone": "+12034790610",
+  "email": "hello@lightload.ai",
+  "founder": {
+    "@type": "Person",
+    "name": "Milena Bucci"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bethany",
+    "addressRegion": "CT",
+    "postalCode": "06524",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Connecticut"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Westchester County, NY"
+    },
+    {
+      "@type": "City",
+      "name": "Springfield, MA"
+    },
+    {
+      "@type": "City",
+      "name": "Providence, RI"
+    }
+  ],
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.3774,
+      "longitude": -72.9926
+    },
+    "geoRadius": "160934"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AI Consulting Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Starter AI Setup",
+          "description": "One workflow automated with in-person consultation and training."
+        },
+        "price": "800",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Standard AI Setup",
+          "description": "Up to three workflows automated with two training sessions and 30 days support."
+        },
+        "price": "1500",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Monthly Retainer",
+          "description": "Ongoing AI workflow updates, new automations, and priority support."
+        },
+        "price": "350",
+        "priceCurrency": "USD"
+      }
+    ]
+  },
+  "sameAs": [
+    "https://www.facebook.com/lightloadai",
+    "https://www.linkedin.com/company/lightloadai"
+  ]
+}
+</script>
+
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Pinyon+Script&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy: #152238;
+    --navy-mid: #1e3050;
+    --navy-light: #2a4268;
+    --cream: #faf7f2;
+    --cream-dark: #f0ebe0;
+    --gold: #b8976a;
+    --gold-light: #d4b483;
+    --white: #ffffff;
+    --text-dark: #152238;
+    --text-mid: #4a5568;
+    --text-light: #8a96a8;
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 22px 60px;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(250,247,242,0.96);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(21,34,56,0.07);
+  }
+  .nav-logo { display: flex; flex-direction: column; line-height: 1; }
+  .nav-logo-main {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px; font-weight: 500;
+    letter-spacing: 0.14em; color: var(--navy); text-transform: uppercase;
+  }
+  .nav-logo-sub {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 15px; color: var(--gold); margin-top: 3px;
+  }
+  .nav-links { display: flex; gap: 36px; list-style: none; align-items: center; }
+  .nav-links a {
+    text-decoration: none; color: var(--text-mid);
+    font-size: 12px; letter-spacing: 0.09em; text-transform: uppercase;
+    font-weight: 400; transition: color 0.25s;
+  }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta {
+    background: var(--navy) !important; color: var(--cream) !important;
+    padding: 10px 22px !important; transition: background 0.25s !important;
+  }
+  .nav-cta:hover { background: var(--gold) !important; color: var(--white) !important; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh; background: var(--navy);
+    display: flex; align-items: center;
+    position: relative; overflow: hidden;
+    padding: 140px 60px 100px;
+  }
+  .hero::before {
+    content: ''; position: absolute;
+    top: -200px; right: -150px;
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(184,151,106,0.13) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: ''; position: absolute;
+    bottom: -100px; left: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(42,66,104,0.5) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-content {
+    max-width: 800px; position: relative; z-index: 2;
+    animation: fadeUp 0.9s ease both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .hero-eyebrow {
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 28px; font-weight: 400;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(52px, 7.5vw, 92px);
+    font-weight: 300; line-height: 1.04;
+    color: var(--white); margin-bottom: 28px; letter-spacing: -0.01em;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold-light); }
+  .hero-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-weight: 300; font-style: italic;
+    color: rgba(250,247,242,0.55); margin-bottom: 44px; letter-spacing: 0.01em;
+  }
+  .hero-sub {
+    font-size: 16px; color: rgba(250,247,242,0.6);
+    max-width: 520px; line-height: 1.85; margin-bottom: 52px; font-weight: 300;
+  }
+  .hero-actions { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--gold); color: var(--white);
+    padding: 16px 38px; text-decoration: none;
+    font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+    font-weight: 500; transition: all 0.3s; display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-ghost {
+    color: rgba(250,247,242,0.65); text-decoration: none;
+    font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+    font-weight: 400; border-bottom: 1px solid rgba(250,247,242,0.25);
+    padding-bottom: 2px; transition: all 0.3s;
+  }
+  .btn-ghost:hover { color: var(--gold-light); border-color: var(--gold-light); }
+  .hero-scroll {
+    position: absolute; bottom: 40px; left: 60px; z-index: 2;
+    display: flex; align-items: center; gap: 12px;
+    color: rgba(250,247,242,0.3); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+  }
+  .hero-scroll-line { width: 40px; height: 1px; background: rgba(250,247,242,0.2); }
+
+  /* ── SHARED ── */
+  .section-label {
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 18px; font-weight: 400;
+  }
+  .section-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 4vw, 54px);
+    font-weight: 400; line-height: 1.12; color: var(--navy); letter-spacing: -0.01em;
+  }
+  .section-heading em { font-style: italic; color: var(--gold); }
+  .section-heading-light { color: var(--white); }
+  .section-heading-light em { color: var(--gold-light); }
+
+  /* ── PAIN ── */
+  .pain-wrap { background: var(--cream); padding: 120px 60px; }
+  .pain {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+  }
+  .pain-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
+  .pain-item {
+    display: flex; gap: 18px; align-items: flex-start;
+    padding: 22px 24px; background: var(--white);
+    border-left: 3px solid var(--cream-dark); transition: border-color 0.3s;
+  }
+  .pain-item:hover { border-color: var(--gold); }
+  .pain-icon {
+    width: 34px; height: 34px; background: var(--navy);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; font-size: 14px;
+  }
+  .pain-item-text strong {
+    display: block; font-size: 13px; font-weight: 500;
+    color: var(--navy); margin-bottom: 3px; letter-spacing: 0.02em;
+  }
+  .pain-item-text span { font-size: 13px; color: var(--text-mid); line-height: 1.6; font-weight: 300; }
+
+  /* ── HOW IT WORKS ── */
+  .how { background: var(--navy); padding: 120px 60px; }
+  .how-inner { max-width: 1200px; margin: 0 auto; }
+  .how-header {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 60px; margin-bottom: 80px; align-items: end;
+  }
+  .how-desc { font-size: 15px; color: rgba(250,247,242,0.58); line-height: 1.9; font-weight: 300; }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+  .step {
+    background: var(--navy-mid); padding: 46px 38px;
+    transition: background 0.3s;
+  }
+  .step:hover { background: var(--navy-light); }
+  .step-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px; font-weight: 300;
+    color: rgba(184,151,106,0.2); line-height: 1; margin-bottom: 22px;
+  }
+  .step h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-weight: 500; color: var(--white);
+    margin-bottom: 12px; letter-spacing: 0.02em;
+  }
+  .step p { font-size: 13px; color: rgba(250,247,242,0.52); line-height: 1.85; font-weight: 300; }
+
+  /* ── INDUSTRIES ── */
+  .industries { background: var(--cream-dark); padding: 120px 60px; }
+  .industries-inner { max-width: 1200px; margin: 0 auto; }
+  .industries-header { text-align: center; margin-bottom: 64px; }
+  .industries-sub { font-size: 14px; color: var(--text-mid); margin-top: 14px; font-weight: 300; }
+  .industry-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .industry-card {
+    background: var(--white); padding: 34px 22px; text-align: center;
+    border-bottom: 3px solid transparent; transition: all 0.3s;
+    text-decoration: none; display: block;
+  }
+  .industry-card:hover {
+    border-bottom-color: var(--gold);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(21,34,56,0.08);
+  }
+  .industry-icon { font-size: 26px; margin-bottom: 14px; display: block; }
+  .industry-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px; font-weight: 500; color: var(--navy); margin-bottom: 7px;
+  }
+  .industry-card p { font-size: 12px; color: var(--text-light); line-height: 1.6; font-weight: 300; }
+  .industry-learn {
+    display: inline-block; margin-top: 14px;
+    font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--gold); font-weight: 500;
+  }
+
+  /* ── PACKAGES ── */
+  .packages { padding: 120px 60px; background: var(--cream); }
+  .packages-inner { max-width: 1200px; margin: 0 auto; }
+  .packages-header { text-align: center; margin-bottom: 64px; }
+  .package-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; }
+  .package {
+    background: var(--white); padding: 46px 38px; position: relative;
+    border: 1px solid rgba(21,34,56,0.07); transition: all 0.3s;
+  }
+  .package:hover { box-shadow: 0 28px 56px rgba(21,34,56,0.1); transform: translateY(-5px); }
+  .package.featured { background: var(--navy); border-color: var(--navy); }
+  .package-tag {
+    position: absolute; top: -12px; left: 38px;
+    background: var(--gold); color: var(--white);
+    font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+    padding: 5px 14px; font-weight: 500;
+  }
+  .package-name {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 10px; font-weight: 400;
+  }
+  .package-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 54px; font-weight: 300; color: var(--navy); line-height: 1; margin-bottom: 4px;
+  }
+  .package.featured .package-price { color: var(--white); }
+  .package-period { font-size: 12px; color: var(--text-light); margin-bottom: 30px; font-weight: 300; }
+  .package.featured .package-period { color: rgba(250,247,242,0.45); }
+  .package-divider { height: 1px; background: rgba(21,34,56,0.07); margin-bottom: 26px; }
+  .package.featured .package-divider { background: rgba(250,247,242,0.12); }
+  .package-features { list-style: none; margin-bottom: 34px; display: flex; flex-direction: column; gap: 13px; }
+  .package-features li {
+    font-size: 13px; color: var(--text-mid);
+    display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; font-weight: 300;
+  }
+  .package.featured .package-features li { color: rgba(250,247,242,0.68); }
+  .package-features li::before { content: '—'; color: var(--gold); flex-shrink: 0; }
+  .package-btn {
+    display: block; text-align: center; padding: 14px;
+    text-decoration: none; font-size: 11px; letter-spacing: 0.14em;
+    text-transform: uppercase; font-weight: 500;
+    border: 1px solid var(--navy); color: var(--navy); transition: all 0.3s;
+  }
+  .package-btn:hover { background: var(--navy); color: var(--white); }
+  .package.featured .package-btn { background: var(--gold); border-color: var(--gold); color: var(--white); }
+  .package.featured .package-btn:hover { background: var(--gold-light); border-color: var(--gold-light); }
+
+  /* ── ABOUT ── */
+  .about { background: var(--navy); padding: 120px 60px; }
+  .about-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center;
+  }
+  .about-text { font-size: 15px; color: rgba(250,247,242,0.58); line-height: 1.9; margin-bottom: 18px; font-weight: 300; }
+  .about-signature { font-family: 'Pinyon Script', cursive; font-size: 44px; color: var(--gold); margin-top: 30px; }
+  .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .stat { background: var(--navy-mid); padding: 38px 34px; transition: background 0.3s; }
+  .stat:hover { background: var(--navy-light); }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px; font-weight: 300; color: var(--gold); line-height: 1; margin-bottom: 8px;
+  }
+  .stat-label { font-size: 12px; color: rgba(250,247,242,0.45); letter-spacing: 0.05em; font-weight: 300; line-height: 1.5; }
+
+  /* ── CONTACT ── */
+  .contact { padding: 120px 60px; background: var(--cream); }
+  .contact-inner { max-width: 740px; margin: 0 auto; text-align: center; }
+  .contact-sub { font-size: 15px; color: var(--text-mid); margin-bottom: 56px; font-weight: 300; line-height: 1.8; }
+  .contact-form { display: flex; flex-direction: column; gap: 14px; text-align: left; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form-group { display: flex; flex-direction: column; gap: 7px; }
+  .form-group label {
+    font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--navy); font-weight: 500;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 13px 16px;
+    border: 1px solid rgba(21,34,56,0.13);
+    background: var(--white); font-family: 'DM Sans', sans-serif;
+    font-size: 14px; color: var(--text-dark); font-weight: 300;
+    outline: none; transition: border-color 0.3s; appearance: none;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--gold); }
+  .form-group textarea { resize: vertical; min-height: 110px; }
+  .form-submit {
+    background: var(--navy); color: var(--white); border: none;
+    padding: 17px 46px; font-family: 'DM Sans', sans-serif;
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    font-weight: 500; cursor: pointer; transition: background 0.3s;
+    margin-top: 6px; align-self: center;
+  }
+  .form-submit:hover { background: var(--gold); }
+
+  /* ── CONTACT DIRECT LINKS ── */
+  .contact-direct {
+    display: flex; align-items: center; justify-content: center;
+    gap: 20px; flex-wrap: wrap;
+    margin-bottom: 44px;
+  }
+  .contact-direct-link {
+    display: flex; align-items: center; gap: 8px;
+    text-decoration: none;
+    color: var(--navy);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 24px;
+    border: 1px solid rgba(21,34,56,0.15);
+    background: var(--white);
+    transition: all 0.3s;
+    -webkit-tap-highlight-color: rgba(184,151,106,0.2);
+  }
+  .contact-direct-link:hover,
+  .contact-direct-link:active {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: var(--cream);
+  }
+  /* Force links to be tappable on all mobile browsers */
+  a[href^="tel"], a[href^="mailto"] {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy); padding: 44px 60px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-top: 1px solid rgba(250,247,242,0.05);
+    flex-wrap: wrap; gap: 20px;
+  }
+  .footer-logo-main {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px; font-weight: 500; letter-spacing: 0.14em;
+    color: var(--white); text-transform: uppercase;
+  }
+  .footer-logo-sub { font-family: 'Pinyon Script', cursive; font-size: 14px; color: var(--gold); margin-top: 3px; }
+  .footer-area { font-size: 11px; color: rgba(250,247,242,0.3); letter-spacing: 0.04em; line-height: 1.8; text-align: center; }
+  .footer-copy { font-size: 11px; color: rgba(250,247,242,0.2); letter-spacing: 0.03em; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 960px) {
+    nav { padding: 18px 24px; }
+    .nav-links { display: none; }
+    .hero { padding: 120px 24px 80px; }
+    .pain-wrap { padding: 80px 24px; }
+    .pain { grid-template-columns: 1fr; gap: 44px; }
+    .how { padding: 80px 24px; }
+    .how-header { grid-template-columns: 1fr; gap: 20px; }
+    .steps { grid-template-columns: 1fr; }
+    .industries { padding: 80px 24px; }
+    .industry-grid { grid-template-columns: repeat(2, 1fr); }
+    .packages { padding: 80px 24px; }
+    .package-grid { grid-template-columns: 1fr; }
+    .about { padding: 80px 24px; }
+    .about-inner { grid-template-columns: 1fr; gap: 56px; }
+    .contact { padding: 80px 24px; }
+    .form-row { grid-template-columns: 1fr; }
+    footer { padding: 36px 24px; flex-direction: column; text-align: center; }
+    .footer-area { text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <span class="nav-logo-main">Light Load AI</span>
+    <span class="nav-logo-sub">by Milena Bucci</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#industries">Who We Serve</a></li>
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-cta">Book a Call</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow">AI Consulting for Small Business — Connecticut &amp; Surrounding Area</p>
+    <h1>Running a small<br>business is <em>heavy.</em><br>We make it light.</h1>
+    <p class="hero-tagline">Workflow automation and AI setup — in person, built for you.</p>
+    <p class="hero-sub">You started your business to do the work you're good at. Not to spend your days on the same emails, the same follow-ups, and the same tasks that repeat every week. AI can handle that. I'll set it up for you.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Book a Free Consultation</a>
+      <a href="#how-it-works" class="btn-ghost">See How It Works</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-line"></span>
+    Scroll
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain-wrap" aria-label="Problems we solve">
+  <div class="pain">
+    <div>
+      <p class="section-label">Sound Familiar?</p>
+      <h2 class="section-heading">You're good at your<br>business. <em>Not your inbox.</em></h2>
+    </div>
+    <ul class="pain-list">
+      <li class="pain-item">
+        <div class="pain-icon" aria-hidden="true">📋</div>
+        <div class="pain-item-text">
+          <strong>Repetitive follow-ups eating your mornings</strong>
+          <span>The same emails, the same reminders, the same requests — sent manually, every single week.</span>
+        </div>
+      </li>
+      <li class="pain-item">
+        <div class="pain-icon" aria-hidden="true">📞</div>
+        <div class="pain-item-text">
+          <strong>Leads going cold while you're with a client</strong>
+          <span>You can't respond instantly to every inquiry. But the business that does — wins.</span>
+        </div>
+      </li>
+      <li class="pain-item">
+        <div class="pain-icon" aria-hidden="true">✍️</div>
+        <div class="pain-item-text">
+          <strong>Hours spent writing estimates and proposals</strong>
+          <span>Every new client means starting from scratch. There's a faster way.</span>
+        </div>
+      </li>
+      <li class="pain-item">
+        <div class="pain-icon" aria-hidden="true">📱</div>
+        <div class="pain-item-text">
+          <strong>Social media and content that never gets done</strong>
+          <span>You know you need to post. You never have time. AI can generate a month of content in minutes.</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how-it-works" aria-label="How it works">
+  <div class="how-inner">
+    <div class="how-header">
+      <div>
+        <p class="section-label" style="color:var(--gold)">How It Works</p>
+        <h2 class="section-heading section-heading-light">I come to you.<br>I set it up.<br><em>You keep the time.</em></h2>
+      </div>
+      <p class="how-desc">This isn't a webinar or a PDF. I come to your business, learn how you work, identify exactly where AI can save you the most time, build your workflows, and train you or your staff to use them. In-person, hands-on, and specific to your business — not a generic template.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>The Audit</h3>
+        <p>We spend one hour walking through your current process — what you do manually, what repeats, what takes the most time. This is where we identify exactly where AI can have the biggest impact for your specific business.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>The Setup</h3>
+        <p>I build your custom AI workflows using tools like Claude and ChatGPT — automated follow-ups, lead responses, content calendars, proposal drafts, and more. No tech knowledge needed on your end.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>The Training</h3>
+        <p>I train you and your team in-person until you're confident. You'll walk away knowing exactly how to use your new tools, what they can do, and how to get more out of them over time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="industries" id="industries" aria-label="Industries served">
+  <div class="industries-inner">
+    <div class="industries-header">
+      <p class="section-label">Who We Serve</p>
+      <h2 class="section-heading">Built for businesses<br><em>running on too little time</em></h2>
+      <p class="industries-sub">Serving small businesses within two hours of New Haven County, Connecticut</p>
+    </div>
+    <div class="industry-grid">
+      <a href="real-estate.html" class="industry-card">
+        <span class="industry-icon" aria-hidden="true">🏡</span>
+        <h4>Real Estate</h4>
+        <p>Lead follow-up, listing copy, client communications</p>
+        <span class="industry-learn">See workflows →</span>
+      </a>
+      <a href="home-services.html" class="industry-card">
+        <span class="industry-icon" aria-hidden="true">🔧</span>
+        <h4>Home Services</h4>
+        <p>Estimates, scheduling, missed call follow-up</p>
+        <span class="industry-learn">See workflows →</span>
+      </a>
+      <a href="restaurants.html" class="industry-card">
+        <span class="industry-icon" aria-hidden="true">🍽️</span>
+        <h4>Restaurants</h4>
+        <p>Review responses, social content, catering inquiries</p>
+        <span class="industry-learn">See workflows →</span>
+      </a>
+      <a href="retail.html" class="industry-card">
+        <span class="industry-icon" aria-hidden="true">🛍️</span>
+        <h4>Retail &amp; Local Shops</h4>
+        <p>Product copy, email newsletters, social calendars</p>
+        <span class="industry-learn">See workflows →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="packages" id="packages" aria-label="Service packages">
+  <div class="packages-inner">
+    <div class="packages-header">
+      <p class="section-label">Packages</p>
+      <h2 class="section-heading">Simple pricing.<br><em>Real results.</em></h2>
+    </div>
+    <div class="package-grid">
+      <div class="package">
+        <p class="package-name">Starter</p>
+        <div class="package-price">$800</div>
+        <p class="package-period">one-time</p>
+        <div class="package-divider"></div>
+        <ul class="package-features">
+          <li>One workflow automated</li>
+          <li>In-person consultation and audit</li>
+          <li>One training session</li>
+          <li>Custom-built to your business</li>
+          <li>14 days of email support</li>
+        </ul>
+        <a href="#contact" class="package-btn">Get Started</a>
+      </div>
+      <div class="package featured">
+        <span class="package-tag">Most Popular</span>
+        <p class="package-name">Standard</p>
+        <div class="package-price">$1,500</div>
+        <p class="package-period">one-time</p>
+        <div class="package-divider"></div>
+        <ul class="package-features">
+          <li>Up to three workflows automated</li>
+          <li>In-person consultation and audit</li>
+          <li>Two training sessions</li>
+          <li>Custom-built to your business</li>
+          <li>30 days of email support</li>
+          <li>Written workflow documentation</li>
+        </ul>
+        <a href="#contact" class="package-btn">Get Started</a>
+      </div>
+      <div class="package">
+        <p class="package-name">Monthly Retainer</p>
+        <div class="package-price">$350</div>
+        <p class="package-period">per month</p>
+        <div class="package-divider"></div>
+        <ul class="package-features">
+          <li>Ongoing workflow updates</li>
+          <li>New automations as your business grows</li>
+          <li>Priority email support</li>
+          <li>Monthly check-in call</li>
+          <li>Access to new AI tools as they launch</li>
+        </ul>
+        <a href="#contact" class="package-btn">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about" aria-label="About Light Load AI">
+  <div class="about-inner">
+    <div>
+      <p class="section-label">About Light Load AI</p>
+      <h2 class="section-heading section-heading-light">Local. <em>In-person.</em><br>Specific to you.</h2>
+      <p class="about-text">Light Load AI was built around a simple observation: small business owners in Connecticut are spending hours every week on tasks that AI could handle in minutes — and no one is showing them how.</p>
+      <p class="about-text">I'm not a software company. I don't sell subscriptions or send you to a help center. I come to your office, learn how your business works, and build something that actually fits it. Then I sit with you until you're comfortable using it.</p>
+      <p class="about-text">Serving businesses within two hours of New Haven County — in person, always.</p>
+      <div class="about-signature">Milena Bucci</div>
+    </div>
+    <div class="about-stats">
+      <div class="stat">
+        <div class="stat-num">2hr</div>
+        <p class="stat-label">Service radius from New Haven County, CT</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num">3</div>
+        <p class="stat-label">Workflows automated in a single Standard package</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num">1:1</div>
+        <p class="stat-label">In-person, hands-on training every time</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num">26hrs</div>
+        <p class="stat-label">Average weekly hours saved by small businesses using AI automation</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact" aria-label="Contact form">
+  <div class="contact-inner">
+    <p class="section-label" style="text-align:center">Get in Touch</p>
+    <h2 class="section-heading" style="text-align:center; margin-bottom:18px">
+      Let's lighten<br><em>your load.</em>
+    </h2>
+    <p class="contact-sub">Book a free 30-minute consultation. No pressure, no pitch — just an honest conversation about where AI could save you the most time.</p>
+
+    <form class="contact-form" name="contact" method="POST" netlify>
+      <input type="hidden" name="form-name" value="contact">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="first-name" placeholder="Jane" required>
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="last-name" placeholder="Smith" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Business Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="(203) 555-0100">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="industry">Business Type</label>
+        <select id="industry" name="industry" required>
+          <option value="" disabled selected>Select your industry</option>
+          <option>Real Estate</option>
+          <option>Home Services</option>
+          <option>Restaurant or Food Business</option>
+          <option>Retail or Local Shop</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">What's taking up most of your time right now?</label>
+        <textarea id="message" name="message" placeholder="Tell me what's on your desk..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Request My Free Consultation</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="footer-logo-main">Light Load AI</div>
+    <div class="footer-logo-sub">by Milena Bucci</div>
+  </div>
+  <div class="footer-area">
+    Serving Connecticut · Westchester County, NY<br>
+    Springfield, MA · Providence, RI<br>
+    New Haven · Hartford · Stamford · Bridgeport · Waterbury · Danbury · Norwalk<br><br>
+    <a href="tel:+12034790610" style="color:var(--gold-light);text-decoration:none;">(203) 479-0610</a> &nbsp;·&nbsp;
+    <a href="/cdn-cgi/l/email-protection#68000d0404072804010f001c0407090c460901" style="color:var(--gold-light);
